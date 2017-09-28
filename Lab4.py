@@ -7,3 +7,7 @@ for line in f:
 	email = re.findall('From',line)
 	if len(email) != 0: 
 		print(line)
+		numbers = re.findall('[0-9]+',line)
+		print(numbers)
+		name = re.findall('(\S*)@',line)
+		print(name)
